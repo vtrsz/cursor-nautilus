@@ -37,7 +37,7 @@ class CursorExtension(GObject.GObject, Nautilus.MenuProvider):
         if NEWWINDOW:
             args = '--new-window '
 
-        call(PATH + ' ' + args + safepaths + '&', shell=True)
+        call(PATH + ' ' + args + safepaths)
 
     def get_file_items(self, *args):
         files = args[-1]
