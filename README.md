@@ -6,7 +6,7 @@ This repo provides a Cursor IDE extension for Nautilus.
 ## Install Extension
 
 ```
-wget -qO- https://raw.githubusercontent.com/harry-cpp/cursor-nautilus/master/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/vtrsz/cursor-nautilus/master/install.sh | bash
 ```
 
 ## Uninstall Extension
