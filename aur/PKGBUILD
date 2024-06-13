@@ -1,14 +1,13 @@
-# Maintainer: tkit <ch1994@outlook.com>
-pkgname=code-nautilus-git
+pkgname=cursor-nautilus-git
 pkgver=r9.ddff975
 pkgrel=2
-pkgdesc="VSCode extension for Nautilus"
+pkgdesc="Cursor IDE extension for Nautilus"
 arch=('i686' 'x86_64')
-url="https://github.com/cra0zy/code-nautilus"
+url="https://github.com/vtrsz/cursor-nautilus"
 license=('custom')
 depends=('python-nautilus')
 makedepends=('git')
-optdepends=('code: The Visual Studio Code (vscode) editor')
+optdepends=('cursor: The Cursor IDE editor')
 install="${pkgname}.install"
 source=("${pkgname}::git+${url}.git")
 md5sums=('SKIP')
@@ -23,6 +22,6 @@ pkgver() {
 
 package() {
     cd "$pkgname"
-    install -Dm755 code-nautilus.py "$pkgdir/usr/share/nautilus-python/extensions/code-nautilus.py"
+    install -Dm755 code-nautilus.py "$pkgdir/usr/share/nautilus-python/extensions/cursor-nautilus.py"
     install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 }
